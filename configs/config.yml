@@ -1,0 +1,35 @@
+mode: local
+
+name: bbb
+version: v1
+
+zone: India
+
+server:
+  monitorHttp:
+    host: 0.0.0.0
+    port: 8080
+  rpc-layout:
+    host: 0.0.0.0
+    port: 9999
+    dialWithCredentials: false
+
+
+data:
+  database:
+    dialect: mysql
+    host: 192.168.152.129
+    port: 3306
+    user: root
+    password: 123456
+    database: user
+    maxIdle: 20
+    maxOpen: 20
+    maxLifetime: 300
+  redis:
+    addr: 192.168.152.129:6379
+    password: 
+    database: 0
+    maxIdle: 20
+    maxActive: 50
+    idleTimeout: 60

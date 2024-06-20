@@ -1,0 +1,65 @@
+# Reference https://github.com/github/gitignore/blob/master/Go.gitignore
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+vendor/
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# OS General
+Thumbs.db
+.DS_Store
+
+# project
+*.cert
+*.key
+*.log
+bin/
+config/cert/*
+config/aliyun.json
+config/local.json
+config/status.json
+config/runtime.config.json
+config/aliyun.json.bak
+
+# Develop tools
+.vscode/
+.idea/
+*.swp
+__debug_bin
+
+# helm
+helm-chart/
+third_party/sql2ent-main/.gitignore
+third_party/sql2ent-main/command.go
+third_party/sql2ent-main/go.mod
+third_party/sql2ent-main/go.sum
+third_party/sql2ent-main/LICENSE
+third_party/sql2ent-main/main.go
+third_party/sql2ent-main/README.md
+third_party/sql2ent-main/sql2ent
+third_party/sql2ent-main/converter/types.go
+third_party/sql2ent-main/example/main.go
+third_party/sql2ent-main/gen/generator.go
+third_party/sql2ent-main/gen/mysql.go
+third_party/sql2ent-main/parser/parser.go
+third_party/sql2ent-main/parser/parser_test.go
+third_party/sql2ent-main/parser/schema.go
+third_party/sql2ent-main/parser/template.go
+third_party/sql2ent-main/util/file.go
+third_party/sql2ent-main/util/matcher.go
+third_party/sql2ent-main/util/newline.go
